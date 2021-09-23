@@ -1,42 +1,66 @@
+/* - Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 */
+
+/* - Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 */
+
+/*************************/
+/* General Component */
+/*************************/
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-.mother-box {
-  width: 40rem;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
+.html {
+  font-size: 62.5%;
+  overflow-x: hidden;
 }
 
-.box {
-  width: 100%;
-  height: 12rem;
+body {
+  font-family: sans-serif;
+  line-height: 1;
+  font-weight: 400;
+}
+
+/*************************/
+/* Reusable Component */
+/*************************/
+
+.container {
   margin: 0 auto;
+  padding: 3.2rem 3.2rem;
 }
 
-.box-1 {
-  background-color: red;
-  grid-row-start: 3;
+/*************************/
+/* Reusable Component */
+/*************************/
+
+/*************************/
+/* Grid Component Section */
+/*************************/
+
+.grid {
+  display: grid;
+  column-gap: 1.6rem;
+  row-gap: 1.2rem;
 }
 
-.box-2 {
-  background-color: green;
-  /* grid-column: 1/4;
-  grid-row-start: 2; */
+.g-c-2 {
+  grid-template-columns: repeat(2, 1fr);
 }
 
-.box-3 {
-  background-color: yellow;
-  /* grid-column: 2/4; */
-}
-.box-4 {
-  background-color: orange;
+.g-c-3 {
+  grid-template-columns: repeat(3, 1fr);
 }
 
-h1 {
-  font-size: 100px;
-  text-align: center;
+.g-c-4 {
+  grid-template-columns: repeat(4, 1fr);
 }
+
+/*************************/
+/* Reusable Component */
+/* Flex Component Section */
+/*************************/
