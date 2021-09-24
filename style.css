@@ -67,11 +67,70 @@ body {
 
 .flex {
   display: flex;
-  align-items: center;
-  justify-content: center;
   gap: 9rem;
+  align-items: center;
 }
 
 .f-col {
   flex-direction: column;
+}
+
+/*************************/
+/* Component */
+/*************************/
+
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.4rem;
+  padding: 0.9rem 1.2rem;
+  cursor: pointer;
+}
+
+.btn:active,
+.btn:hover {
+  font-size: 1.5rem;
+}
+
+/*************************/
+/* Styling */
+/*************************/
+
+.nav {
+  justify-content: space-between;
+  background-color: burlywood;
+  padding: 0.6rem;
+}
+
+.btn-nav {
+  background-color: bisque;
+  border-radius: 9px;
+}
+
+.first-section {
+  height: 55vh;
+}
+
+.section-selection {
+  column-gap: 0.4rem;
+}
+
+.section-footer {
+  background-color: #333;
+  max-width: 100%;
+}
+
+.btn-footer:link {
+  padding: 0;
+  row-gap: 1rem;
+}
+
+.footer-help-text {
+  font-size: 1rem;
+  color: bisque;
+}
+
+.mm-icon {
+  color: bisque;
 }
