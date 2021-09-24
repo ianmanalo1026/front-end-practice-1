@@ -32,12 +32,8 @@ body {
 .container {
   margin: 0 auto;
   padding: 3.2rem 3.2rem;
-  max-width: 120rem;
+  max-width: 90rem;
 }
-
-/*************************/
-/* Reusable Component */
-/*************************/
 
 /*************************/
 /* Grid Component Section */
@@ -47,6 +43,7 @@ body {
   display: grid;
   column-gap: 1.6rem;
   row-gap: 1.2rem;
+  place-items: center;
 }
 
 .g-c-2 {
@@ -61,7 +58,20 @@ body {
   grid-template-columns: repeat(4, 1fr);
 }
 
+.g-gap-1 {
+  gap: 0.8rem;
+}
 /*************************/
-/* Reusable Component */
 /* Flex Component Section */
 /*************************/
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9rem;
+}
+
+.f-col {
+  flex-direction: column;
+}
